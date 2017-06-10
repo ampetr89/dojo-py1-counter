@@ -1,0 +1,41 @@
+body{
+	background: linear-gradient(to top, rgb(72,72,72),rgb(51,51,51))
+}
+
+main{
+	height: 60vh;
+	margin: 20vh auto;
+	text-align: center;
+	
+}
+
+#counter-container{
+	height: 3em;
+	overflow: hidden;
+}
+#counter{
+	font-size: 300%;
+	display: none;
+	font-family: courier;
+	color: rgb(200,200,200);
+}
+
+h3{
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
+	font-size: 175%;
+	color: rgb(170,170,170);
+}
+
+form{
+	display: inline-block;
+}
+input[type="submit"]{
+	background-color: rgb(180,180,180);
+	font-weight: bold;
+	border-radius: 5px;
+	width: 15em;
+	height: 2em;
+	margin: 20px;
+
+}

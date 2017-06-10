@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#counter').slideDown(300);
+			/*$('#counter').animate({'width': '0'}, 200, 
+				function(){
+					$('#counter').animate({'width': '100%'}, 300)
+				});*/
+		})
+	</script>
+</head>
+<body>
+
+<main>
+	<h3>This is your</h3>
+	<div id="counter-container"><span id="counter">{{counter}}</span></div>
+	<h3>visit.</h3>
+	<section>
+		<form action='\plus2'><input type="submit" value="Add 2"></form>
+		<form action='\reset'><input type="submit" value="Reset Counter"></form>
+	</section>
+</main>
+</body>
+</html>
