@@ -19,7 +19,7 @@ def index():
 	try:
 		session['n'] += 1
 	except:
-		session['n'] = 0
+		session['n'] = 1 # start counting visits at 1
 
 	
 	return render_template('index.html', counter=fmtnum(session['n']))
@@ -29,7 +29,7 @@ def plus2():
 	try:
 		session['n'] += 1 # add one, because when it redirects, it will get another added
 	except:
-		session['n'] = 0
+		session['n'] = 1
 
 	return redirect('/')
 
@@ -37,7 +37,7 @@ def plus2():
 @app.route('/reset')
 def reset():
 	
-	session['n'] = -1 # when it redirects, it will get another added
+	session['n'] = 0 # when it redirects, it will get another added
 	
 	return redirect('/')
 
